@@ -45,7 +45,7 @@ pipeline {
                  Check console output at ${env.BUILD_URL}console"""
         }
         success {
-            mail to: 'jananainathan.ee@gmail.com',
+            mail to: 'jananinathan.ee@gmail.com',
                  subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Job '${env.JOB_NAME}' succeeded. ${env.BUILD_URL}"
         }
